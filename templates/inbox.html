@@ -98,7 +98,7 @@
 let page = 1;
 
 function loadEmails(page) {
-    fetch(`http://127.0.0.1:8000/emails/?page=${page}`)
+    fetch(`https://render-email.onrender.com/emails/?page=${page}`)
         .then(res => res.json())
         .then(data => {
             const list = document.getElementById("email-list");
